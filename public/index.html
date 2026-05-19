@@ -77,7 +77,6 @@
                 class="editor__tab"
                 role="tab"
                 aria-selected="true"
-                aria-controls="note-input"
               >
                 Write
               </button>
@@ -93,11 +92,12 @@
               </button>
             </div>
             <textarea
-              id="note-input"
+              data-note-body
               class="textarea"
               placeholder="Type a private note. Markdown supported."
               aria-label="Note content"
               rows="6"
+              autocomplete="off"
             ></textarea>
             <div
               id="note-preview"

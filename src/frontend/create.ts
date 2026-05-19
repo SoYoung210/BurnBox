@@ -26,7 +26,7 @@ interface AttachedFile {
 }
 
 const form = document.getElementById("create-form") as HTMLFormElement;
-const noteInput = document.getElementById("note-input") as HTMLTextAreaElement;
+const noteInput = document.querySelector("[data-note-body]") as HTMLTextAreaElement;
 const notePreview = document.getElementById("note-preview") as HTMLElement;
 const tabWrite = document.getElementById("tab-write") as HTMLButtonElement;
 const tabPreview = document.getElementById("tab-preview") as HTMLButtonElement;
